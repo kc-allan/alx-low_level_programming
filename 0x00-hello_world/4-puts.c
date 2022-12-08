@@ -1,9 +1,9 @@
 #include <stdio.h>
 /*Initial description*/
-/**
- * Description
- */
 int main(void)
+/**
+ * description
+ */
 {
 	/*Print text using put function*/
 	puts("\"Programming is like building a multilingual puzzle");
