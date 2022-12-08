@@ -1,6 +1,5 @@
 #include <stdio.h>
-/*Display text using puts function*/
-int main(void)
+int main(void)/*Display text using puts function*/
 {
 	/*Print text using put function*/
 	puts("\"Programming is like building a multilingual puzzle");
