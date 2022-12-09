@@ -7,7 +7,10 @@
  */
 int main(void)
 {
-	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	putchar(tolower(a));
+	char ch = "a"
+	do {
+		putchar(ch);
+	}while (ch <= 'z');
+	putchar("\n");
 	return (0);
 }
