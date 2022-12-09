@@ -11,6 +11,6 @@ int main(void)
 	do {
 		putchar(ch);
 	}while (ch <= 'z');
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
