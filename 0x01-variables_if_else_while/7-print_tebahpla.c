@@ -10,7 +10,7 @@ int main (void)
 	while (rev <= 'a')
 	{
 		putchar(rev)
-		rev--;
+		rev-=1;
 	}
 	putchar('\n');
 	return (0);
