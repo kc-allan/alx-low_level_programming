@@ -15,13 +15,10 @@ int main(void)
 		putchar(small);
 		small++;
 	}
-	if (small == 'z')
+	while (big <= 'Z')
 	{
-		while (big <= 'Z')
-		{
-			putchar(big);
-			big++;
-		}
+		putchar(big);
+		big++;
 	}
 	putchar('\n');
 	return (0);
