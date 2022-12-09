@@ -1,18 +1,22 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
- * main -Wntry point
+ * main - returns an alphabet in reverse order
  *
  * Return: Always 0 (Success)
  */
-int main (void)
-{
-	char rev = 'z';
 
-	while (rev <= 'a')
+int main(void)
+{
+	int ch = 'z';
+
+	while (ch >= 'a')
 	{
-		putchar("%c",rev);
-		rev -= 1;
+		putchar(ch);
+		ch--;
 	}
 	putchar('\n');
+
 	return (0);
 }
