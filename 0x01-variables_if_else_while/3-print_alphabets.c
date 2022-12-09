@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * maun -Entry point
  *
@@ -22,6 +22,7 @@ int main(void)
 			putchar(big);
 			big++;
 		}
+	}
 	putchar('\n');
 	return (0);
 }
