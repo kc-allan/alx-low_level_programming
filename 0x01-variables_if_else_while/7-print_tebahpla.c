@@ -7,9 +7,10 @@
 int main (void)
 {
 	char rev = 'z';
+
 	while (rev <= 'a')
 	{
-		putchar(rev)
+		putchar(rev);
 		rev-=1;
 	}
 	putchar('\n');

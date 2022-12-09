@@ -5,12 +5,12 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-{	int num = 0;
+{	int ch = 0;
 
-	while (num <= 10)
+	while (ch < 10)
 	{
-		putchar(num);
-		num++;
+		putchar(ch);
+		ch++;
 	}
 	putchar('\n');
 	return (0);
