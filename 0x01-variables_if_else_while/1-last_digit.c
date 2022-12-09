@@ -14,9 +14,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int last=n%10;
-
 	/* your code goes there */
-	printf("%d\n", last);
+	printf("%d\n", n%10);
 	return (0);
 }
