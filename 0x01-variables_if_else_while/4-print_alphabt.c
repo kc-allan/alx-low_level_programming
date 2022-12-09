@@ -10,7 +10,7 @@ int main(void)
 	char ch = 'a';
 
 	do {
-		if (ch != 'e' || ch != 'q')
+		while (ch != 'e' || ch != 'q')
 		{
 			putchar(ch);
 			ch++;
