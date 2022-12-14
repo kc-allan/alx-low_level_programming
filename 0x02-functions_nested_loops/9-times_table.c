@@ -5,13 +5,13 @@
  */
 void times_table(void)
 {
-	char line, pos = '0';
+	char line, pos = 0;
 
-	for (pos = '0'; pos < '9'; pos++)
+	for (line = 0; line < 9; line++)
 	{
-		for (line = '0'; line < '9'; line++)
+		for (pos = 0; pos < 9; pos++)
 		{
-			if (line == '9')
+			if (line == 9)
 			{
 				_putchar('\n');
 			}
