@@ -14,7 +14,7 @@ void times_table(void)
 			prod = line * pos;
 			if (prod <= 9)
 			{
-				_putchar((prod) + '0')
+				_putchar((prod) + '0');
 			}
 			else if (line == 9)
 			{
