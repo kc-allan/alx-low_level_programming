@@ -11,7 +11,7 @@ void times_table(void)
 	{
 		for (pos = 0; pos <= 9; pos++)
 		{
-			if (line == 9);
+			if (line == 9)
 			{
 				_putchar('\n');
 			}
