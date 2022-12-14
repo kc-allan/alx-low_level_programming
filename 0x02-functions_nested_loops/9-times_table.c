@@ -5,14 +5,18 @@
  */
 void times_table(void)
 {
-       int line, pos, prod;
+	int line, pos, prod;
 
 	for (line = 0; line < 9; line++)
 	{
 		for (pos = 0; pos < 9; pos++)
 		{
 			prod = line * pos;
-			if (line == 9)
+			if (prod <= 9)
+			{
+				_putchar((prod) + '0')
+			}
+			else if (line == 9)
 			{
 				_putchar((prod / 10) + '0');
 				_putchar((prod % 10) + '0');
