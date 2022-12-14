@@ -1,13 +1,17 @@
 #include "main.h"
-/**
- * main - Entry point
+/** 3
+ * _islower - Checks for lowercase
  *
- * Return: 0 (Success)
+ * Return: 0 or 1
  */
-int main(void)
+int _islower(int c)
 {
-	int r;
-	r = _islower('y');
-	putchar('\n');
-	return (0);
+	if (islower(c))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
