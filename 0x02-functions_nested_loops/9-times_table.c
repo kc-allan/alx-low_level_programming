@@ -37,6 +37,7 @@ void times_table(void)
 				if (line == 10)
 				{
 					_putchar('\n');
+				}
 			}
 		}
 	}
