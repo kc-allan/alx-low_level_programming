@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * isalpha - Checks if a character c is an alphabet
+ * _isalpha - Checks if the parameter c is an alphabet
  *
  * Return: 1 if c is a letter else returns 0
  */
