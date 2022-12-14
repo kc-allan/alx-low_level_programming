@@ -1,44 +1,38 @@
 #include "main.h"
 /**
- * times_table - Displays the 9 by 9 times table
- * Return: 0
+ * times_table - prints the times table from 0 - 9.
+ * Return: Nothing.
  */
 void times_table(void)
 {
-	int line, pos, prod;
+	int i, j, res;
 
-	for (line = 0; line < 10; line++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (pos = 0; pos < 10; pos++)
+		for (j = 0; j <= 9; j++)
 		{
-			prod = line * pos;
-			if (prod <= 10)
+			res = (i * j);
+			if (j != 0)
 			{
-				_putchar((prod) + '0');
 				_putchar(',');
 				_putchar(' ');
-				if (line == 10)
-				{
-					_putchar('\n');
-				}
 			}
-			else if (line == 10)
+			if (res >= 10)
 			{
-				_putchar((prod / 10) + '0');
-				_putchar((prod % 10) + '0');
-				_putchar('\n');
+				_putchar((res / 10) + '0');
+				_putchar((res % 10) + '0');
+			}
+			else if (res < 10 && j != 0)
+			{
+				_putchar(' ');
+				_putchar((res % 10) + '0');
 			}
 			else
 			{
-				_putchar((prod / 10) + '0');
-				_putchar((prod % 10) + '0');
-				_putchar(',');
-				_putchar(' ');
-				if (line == 10)
-				{
-					_putchar('\n');
-				}
+				_putchar((res % 10) + '0');
 			}
 		}
+
+			_putchar('\n');
 	}
 }
