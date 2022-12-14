@@ -13,12 +13,12 @@ void times_table(void)
 		{
 			if (line == 9)
 			{
-				_putchar((line * pos) + '0');
+				_putchar(line * pos);
 				_putchar('\n');
 			}
 			else
 			{
-				_putchar((line * pos) + '0');
+				_putchar(line * pos);
 				_putchar(',');
 				_putchar(' ');
 			}
