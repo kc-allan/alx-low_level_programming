@@ -17,7 +17,7 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar((line * pos) + '0');
+				_putchar('0' + (line * pos));
 				_putchar(',');
 				_putchar(' ');
 			}
