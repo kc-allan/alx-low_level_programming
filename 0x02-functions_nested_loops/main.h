@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <ctype.h>
-//void print_alphabet(void);
 /** 2
  * print_alphabet - prints alphabets in lowercase
  *
