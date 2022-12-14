@@ -6,6 +6,7 @@
 void times_table(void)
 {
 	int line, pos = 0;
+	int prod = line * pos;
 
 	for (pos = 0; pos < 9; pos++)
 	{
@@ -17,7 +18,7 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(line * pos);
+				_putchar(prod);
 				_putchar(',');
 				_putchar(' ');
 			}
