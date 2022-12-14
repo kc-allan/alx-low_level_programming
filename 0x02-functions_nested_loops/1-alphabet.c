@@ -14,13 +14,3 @@ void print_alphabet(void)
 	}
 	putchar('\n');
 }
-/**
- * main - Calls print_alphabet()
- *
- * Return: 0
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
