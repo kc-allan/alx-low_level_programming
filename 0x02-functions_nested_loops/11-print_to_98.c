@@ -31,7 +31,7 @@ void print_to_98(int r)
 		if (r / 10)
 		       	printnumber(r / 10);
 		_putchar ((r % 10) + '0');
-		r++;
+	r++;
 	}
 	_putchar('9');
 	_putchar('8');
