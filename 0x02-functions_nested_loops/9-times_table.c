@@ -5,20 +5,23 @@
  */
 void times_table(void)
 {
-	char line, pos = 0;
+       int line, pos = 0;
 
 	for (line = 0; line < 9; line++)
 	{
 		for (pos = 0; pos < 9; pos++)
 		{
+			prod = line * pos;
 			if (line == 9)
 			{
-				_putchar(line * pos);
+				_putchar((prod / 10) + '0');
+				_putchar((prod % 10) + '0');
 				_putchar('\n');
 			}
 			else
 			{
-				_putchar(line * pos);
+				_putchar((prod / 10) + '0');
+				_putchar((prod % 10) + '0');
 				_putchar(',');
 				_putchar(' ');
 			}
