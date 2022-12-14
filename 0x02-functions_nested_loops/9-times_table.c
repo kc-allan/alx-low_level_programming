@@ -13,6 +13,7 @@ void times_table(void)
 		{
 			if (line == 9)
 			{
+				_putchar((line * pos) + '0');
 				_putchar('\n');
 			}
 			else
