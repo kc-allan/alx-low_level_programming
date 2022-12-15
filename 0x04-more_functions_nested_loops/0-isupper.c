@@ -6,23 +6,8 @@
  */
 int _isupper(int c)
 {
-	int x;
-
-	for (x = 'A'; x < 'Z'; x++)
-	{
-		if (c == x)
-		{
-			_putchar(c);
-			_putchar(':');
-			_putchar(' ');
-			return (1);
-		}
-		else
-		{
-			_putchar(c);
-			_putchar(':');
-			_putchar(' ');
-			return (0);
-		}
-	}
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
 }
