@@ -6,19 +6,8 @@
  */ 
 int _isdigit(int c)
 {
-	int i;
-
-	for (i = 0; i <= 10; i++)
-	{
-		if (i == c)
-		{
-			return (1);
-			break;
-		}
-		else
-		{
-			return (0);
-			break;
-		}
-	}
+	if (c >= 0 && c <= 10)
+		return (1);
+	else
+		return (0);
 }
