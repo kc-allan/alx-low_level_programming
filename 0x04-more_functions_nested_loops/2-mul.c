@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * mul - multiplies parameter a and b
- * @a: First parameter
- * @b: Second parameter
- * Return: 1 if uppercase, 0 if lowercase
+ * mul - input- multiplies 2 numbers
+ * @a: first number
+ * @b: second number
+ * Return: the answer
  */
 int mul(int a, int b)
 {
