@@ -6,6 +6,8 @@
  */ 
 int _isdigit(int c)
 {
+	int i;
+
 	for (i = 0; i <= 10; i++)
 	{
 		if (i == c)
@@ -16,6 +18,7 @@ int _isdigit(int c)
 		else
 		{
 			return (0);
+			break;
 		}
 	}
 }
