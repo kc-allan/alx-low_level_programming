@@ -5,19 +5,19 @@
  * @s: string to be reversed
  * Return: void
  */
-void puts_half(char *s)
+void puts_half(char *str)
 {
 	char r[1000];
 	int begin, count = 0;
 	
-	while (s[count] != '\0')
+	while (str[count] != '\0')
 	{
 		count++;
 	}
 	int half = count / 2;
 	for (begin = 0; begin < count; begin++)
 	{
-		r[begin] = s[half];
+		r[begin] = str[half];
 		half++;
 	}
 	char *i = r;
