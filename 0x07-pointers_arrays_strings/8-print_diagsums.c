@@ -1,5 +1,11 @@
 #include "main.h"
 #include <stdio.h>
+/**
+ * print_diagsums - Sum of matrix diagonal integers
+ * @a: matrix
+ * @size: size of matrix
+ * Return: void
+ */
 void print_diagsums(int *a, int size)
 {
 	int i, k, sum1 = 0, sum2 = 0;

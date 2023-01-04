@@ -1,10 +1,9 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * _strchr - print match
- * @s: array
- * @c: char
- * Return: char return
+ * _strpbrk - print match
+ * @s: initial string
+ * @accept: substring
+ * Return:pointer to substring or NULL
  */
 char *_strpbrk(char *s, char *accept)
 {
