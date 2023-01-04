@@ -14,7 +14,6 @@ char *_strchr(char *s, char c)
 	{
 		i++;
 	}
-	printf("%c\n", s[i]);
 	if (s[i] == c)
 		return (&s[i]);
 	else
