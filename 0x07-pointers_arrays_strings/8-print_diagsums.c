@@ -1,0 +1,20 @@
+#include "main.h"
+#include <stdio.h>
+void print_diagsums(int *a, int size)
+{
+	int i, k, sum1 = 0, sum2 = 0;
+	
+	for (i = 0; i < size; i++)
+	{
+		k = 0;
+		sum1 += *(a + i*size + i);
+		k++;
+	}
+	for (i = size - 1; i >= 0; i--)
+	{
+		k = size - 1;
+		sum2 += *(a + i*size + size - i - 1);
+		k--;
+	}
+	printf("%d, %d\n", sum1, sum2);
+}
