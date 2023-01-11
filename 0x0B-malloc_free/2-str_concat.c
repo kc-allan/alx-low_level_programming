@@ -23,8 +23,10 @@ char *str_concat(char *s1, char *s2)
 		}
 	}
 	else
+	{
 		n = 0;
 		s1 = "";
+	}
 	if (s2 != NULL)
 		while (*s2)
 		{
