@@ -9,7 +9,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	unsigned int i, k;
-	unsigned int n = 0;
+	unsigned int n = 1;
 	char *res, *dest, *src;
 
 	dest = s1;
@@ -19,10 +19,11 @@ char *str_concat(char *s1, char *s2)
 		while (*s1)
 		{
 			n++;
-			s1++	;
+			s1++;
 		}
 	}
 	else
+		n = 0;
 		s1 = "";
 	if (s2 != NULL)
 		while (*s2)
