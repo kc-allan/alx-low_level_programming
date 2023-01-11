@@ -9,7 +9,7 @@ char *_strdup(char *str)
 {
 	char *dup, *str1;
 	unsigned int i;
-	unsigned int n = 0;
+	unsigned int n = 1;
 
 	if (str == 0)
 		return (0);
@@ -22,12 +22,9 @@ char *_strdup(char *str)
 	dup = (char *)malloc(n * sizeof(char));
 	if (dup == 0)
 		return (0);
-	else
+	for (i = 0; i < n; i++)
 	{
-		for (i = 0; i < n; i++)
-		{
-			*(dup + i) = *(str1 + i);
-		}
-		return (dup);
+		*(dup + i) = *(str1 + i);
 	}
+	return (dup);
 }

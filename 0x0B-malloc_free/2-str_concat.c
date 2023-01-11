@@ -33,15 +33,19 @@ char *str_concat(char *s1, char *s2)
 	else
 		s2 = "";
 	res = (char *)malloc(n * sizeof(char));
-	for (i = 0; dest[i] != '\0'; i++)
-	{
-		res[i] = dest[i];
-	}
-	for (k = 0; src[k] != '\0'; k++)
-	{
-		res[i] = src[k];
-		i++;
-	}
+	if (dest != NULL)
+		for (i = 0; dest[i] != '\0'; i++)
+		{
+			res[i] = dest[i];
+		}
+	else
+		i = 0;
+	if (src != NULL)
+		for (k = 0; src[k] != '\0'; k++)
+		{
+			res[i] = src[k];
+			i++;
+		}
 	res[i] = '\0';
 	return (res);
 }
