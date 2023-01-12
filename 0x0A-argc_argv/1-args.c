@@ -5,7 +5,7 @@
  * @argv: array of arguments
  * Return: 0
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int count = 0;
 
@@ -13,6 +13,6 @@ int main (int argc, char *argv[])
 	{
 		count++;
 	}
-	printf ("%d\n", count);
+	printf("%d\n", count);
 	return (0);
 }

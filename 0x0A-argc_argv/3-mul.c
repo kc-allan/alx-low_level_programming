@@ -6,14 +6,14 @@
  * @argv: array of arguments
  * Return: 0 (success) 1 (error)
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int res;
 	int x, y;
 	
 	if (argc != 3)
 	{
-		printf ("%s\n", "Error");
+		printf("%s\n", "Error");
 		return (1);
 	}
 	else
@@ -22,6 +22,6 @@ int main (int argc, char *argv[])
 		y = atoi(argv[2]);
 	}
 	res = x * y;
-	printf ("%d\n", res);
+	printf("%d\n", res);
 	return (0);
 }
