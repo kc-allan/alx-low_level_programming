@@ -1,4 +1,4 @@
 #!/bin/bash
-find . -name "*.c" -exec gcc \-c {} \;
-find . -name "*.o" -exec ar rc liball.a {} \;
-echo -e "\n"
+gcc -Wall -pedantic -Werror -Wextra -c *.c
+ar -rc liball.a *.o
+ranlib liball.a
