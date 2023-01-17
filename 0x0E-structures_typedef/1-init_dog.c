@@ -4,7 +4,7 @@
  * @d: structure of new dog d
  * @name: name of dog
  * @age: age of dog
- * @owner: * of dog
+ * @owner: owner of dog
  *
  * Return: void
  */
