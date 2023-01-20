@@ -17,7 +17,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		x = va_arg(args, char*);
-		if (x == NULL)
+		if (x == NULL || x == "")
 			x = "(nil)";
 		if (i != n - 1)
 		{
