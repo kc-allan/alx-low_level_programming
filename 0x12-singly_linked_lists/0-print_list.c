@@ -10,7 +10,7 @@ size_t print_list(const list_t *h)
 {
 	unsigned int sum = 0;
 
-	if (h->nwxt == NULL)
+	if (h->next == NULL)
 		sum = 1;
 	while (h->next != NULL)
 	{
