@@ -10,9 +10,7 @@ size_t print_list(const list_t *h)
 {
 	unsigned int sum = 0;
 
-	if (h->next == NULL)
-		sum = 1;
-	while (h->next != NULL)
+	while (h)
 	{
 		if (h->str == NULL)
 			printf("[0] (nil)\n");
@@ -20,11 +18,6 @@ size_t print_list(const list_t *h)
 			printf("[%d] %s\n", h->len, h->str);
 		sum++;
 		h = h->next;
-		if (h->next == NULL)
-		{
-			printf("[%d] %s\n", h->len, h->str);
-			sum++;
-		}
 	}
 	return (sum);
 }
