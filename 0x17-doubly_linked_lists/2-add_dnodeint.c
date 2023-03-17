@@ -3,7 +3,7 @@
  * add_dnodeint - adds node at the beginning of the list
  * @head: pointer to list
  * @n: element to be added
- * Return: updated lisr
+ * Return: updated list
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
