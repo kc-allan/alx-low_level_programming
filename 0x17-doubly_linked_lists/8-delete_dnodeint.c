@@ -2,7 +2,7 @@
 /**
  * delete_dnodeint_at_index - deletes node at an index
  * @head: pointer to list
- * @imdex: position of node to be deleted
+ * @index: position of node to be deleted
  * Return: updated list
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
