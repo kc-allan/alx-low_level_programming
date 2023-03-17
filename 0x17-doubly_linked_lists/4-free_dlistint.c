@@ -5,9 +5,14 @@
  */
 void free_dlistint(dlistint_t *head)
 {
-	for (i = 0; head->next != NULL)
+	int i = 0;
+
+	for (i = 0; head->prev != NULL; i++)
+		head = head->prev;
+	for (i = 0; head->next != NULL; i++)
 	{
+		free(head);
 		head = head->next;
-		free(head)
 	}
+	free(head);
 }
