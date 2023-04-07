@@ -32,9 +32,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			break;
 		}
 	}
-	while (current->next != NULL)
-		current = current->next;
-	current->next = node;
-	node->next = NULL;
+	if (current == NULL)
+	{
+		node->next = NULL;
+		current = node;
+	}
+	else
+	{
+		node->next = current;
+		current->next = NULL;
+	}
 	return (0);
 }
