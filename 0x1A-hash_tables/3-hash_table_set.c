@@ -1,23 +1,21 @@
 #include "hash_tables.h"
-#include <string.h>
 /**
- * hash_table_set - adds data into a hash table
- * @ht: hash table
+ * hash_table_set - adds key: value pair to a hash table
+ * @ht: pointer to hash_table
  * @key: key
  * @value: value
- * Return: 1 (Success)
+ *
+ * Return: 1 (success)
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
+	hash_node_t *node, *current;
 	unsigned long int index, i;
 	char *ky = strdup(key), *val = strdup(value);
-	hash_node_t *node, *current;
 
-	current = malloc(sizeof(hash_node_t));
-	if (current == NULL)
-		return (0);
 	if (key == NULL || *key == '\0' || ht == NULL || value == NULL)
 		return (0);
+	current = malloc(sizeof(hash_node_t));
 	if (val == NULL)
 		return (0);
 	index = key_index((const unsigned char *)key, ht->size);
@@ -44,7 +42,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	node->value = val;
-	node->next = current;
-	current = node;
+	node->next = ht->array[index];
+	ht->array[index] = node;
+
 	return (1);
 }
