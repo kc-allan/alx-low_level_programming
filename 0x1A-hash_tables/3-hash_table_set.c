@@ -18,7 +18,14 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (node == NULL)
 		return (0);
 	current = malloc(sizeof(hash_node_t));
+	if (current == NULL)
+		return (1);
 	node->key = ky;
+	if (node->key == NULL)
+	{
+		free(node);
+		return (0);
+	}
 	node->value = val;
 	hash = hash_djb2((const unsigned char *)key);
 	index = hash % ht->size;
@@ -26,21 +33,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (i++ == index)
 		{
-			printf("Allocating to current...\n");
 			current = ht->array[i];
-			printf("Allocated to current\n");
 			break;
 		}
 	}
-	if (current == NULL)
-	{
-		node->next = NULL;
-		current = node;
-	}
-	else
-	{
-		node->next = current;
-		current->next = NULL;
-	}
-	return (0);
+	node->next = current;
+	current = node;
+	return (1);
 }
