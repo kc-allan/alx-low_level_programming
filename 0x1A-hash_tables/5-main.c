@@ -7,10 +7,11 @@
  */
 int main(void)
 {
-    hash_table_t *ht;
+    hash_table_t *ht, *ex;
 
     ht = hash_table_create(1024);
-    hash_table_print(ht);
+	ex = hash_table_create(0);
+    hash_table_print(ex);
     hash_table_set(ht, "c", "fun");
     hash_table_set(ht, "python", "awesome");
     hash_table_set(ht, "Bob", "and Kris love asm");
