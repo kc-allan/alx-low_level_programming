@@ -9,7 +9,6 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int hash;
 	unsigned long int index, i;
 	char *ky = strdup(key), *val = strdup(value);
 	hash_node_t *node, *current;
@@ -27,14 +26,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	node->value = val;
-	hash = hash_djb2((const unsigned char *)key);
-	index = hash % ht->size;
-	for (i = 0; ht->array[i] != NULL && i < index; i++)
+	index = key_index((const unsigned char *)key, ht->size);
+	for (i = index; ht->array[i]; i++)
 	{
-		if (i++ == index)
+		current = ht->array[i];
+		if (strcmp(current->key, key) == 0)
 		{
-			current = ht->array[i];
-			break;
+			free(current->value);
+			current->value = val;
+			return (1);
 		}
 	}
 	node->next = current;
