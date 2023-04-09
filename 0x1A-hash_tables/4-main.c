@@ -24,8 +24,8 @@ int main(void)
     hash_table_set(ht, "c", "isfun");
 	hash_table_set(ht, "Canada", "Ottawa");
 
-	value = hash_table_get(NULL, "Canada");
-	printf("%s:%s\n", "Canada", value);
+	value = hash_table_get(NULL, "USA");
+	printf("%s:%s\n", "USA", value);
 	value = hash_table_get(ht, "Canada");
 	printf("%s:%s\n", "Canada", value);
     value = hash_table_get(ht, "python");
