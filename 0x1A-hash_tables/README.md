@@ -1,1 +1,1 @@
-Hash tables data structure
+Hash tables (data structure)
